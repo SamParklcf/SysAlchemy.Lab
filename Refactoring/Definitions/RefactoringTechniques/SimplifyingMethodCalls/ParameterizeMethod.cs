@@ -62,4 +62,8 @@ public class ParameterizeMethod : IRefactoringTechniquesInstruction
             $"3. For each old method, find the places where it’s called, " +
             $"replacing these calls with calls to the new method that include a parameter. Then delete the old method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

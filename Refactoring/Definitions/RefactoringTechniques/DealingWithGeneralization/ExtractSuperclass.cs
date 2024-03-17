@@ -59,4 +59,8 @@ public class ExtractSuperclass : IRefactoringTechniquesInstruction
                $"3. Look for places in the client code where use of subclasses can be replaced " +
                $"with your new class (such as in type declarations).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -77,4 +77,8 @@ public class IntroduceLocalExtension : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"5. Replace use of the utility class with the new extension class in places where its functionality is needed.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

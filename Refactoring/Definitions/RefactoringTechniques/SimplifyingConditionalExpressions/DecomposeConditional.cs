@@ -57,4 +57,8 @@ public class DecomposeConditional : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"2. Repeat the process for the then and else blocks.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -61,4 +61,8 @@ public class SwitchStatements : ICodeSmellsInstruction
                $"- Often switch operators are used by factory design patterns " +
                $"(Factory Method or Abstract Factory) to select a created class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

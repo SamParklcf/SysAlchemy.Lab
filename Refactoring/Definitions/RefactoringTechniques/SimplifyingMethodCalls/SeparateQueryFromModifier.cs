@@ -80,4 +80,8 @@ public class SeparateQueryFromModifier : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"4. Get rid of the value-returning code in the original method, which now has become a proper modifier method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

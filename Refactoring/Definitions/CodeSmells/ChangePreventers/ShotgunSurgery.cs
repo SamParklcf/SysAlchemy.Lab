@@ -49,4 +49,8 @@ public class ShotgunSurgery : ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"- Easier maintenance.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

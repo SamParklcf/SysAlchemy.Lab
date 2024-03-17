@@ -74,4 +74,8 @@ public class ChangeReferenceToValue : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Check whether you can delete the factory method and make the object constructor public.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

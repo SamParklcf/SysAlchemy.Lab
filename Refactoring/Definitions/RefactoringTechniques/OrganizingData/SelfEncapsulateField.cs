@@ -70,4 +70,8 @@ public class SelfEncapsulateField : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"2. Find all direct invocations of the field and replace them with getter and setter calls.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

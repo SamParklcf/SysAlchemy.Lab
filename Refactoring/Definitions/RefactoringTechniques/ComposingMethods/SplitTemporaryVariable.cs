@@ -67,4 +67,11 @@ public class SplitTemporaryVariable : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Repeat as needed for places where the variable is assigned a different value.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. Each component of the program code should be responsible for one and one thing only. " +
+        $"this makes it much easier to maintain the code" +
+        $"{Environment.NewLine}" +
+        $"2. Code becomes more readable.";
 }

@@ -60,4 +60,8 @@ public class ReplaceExceptionWithTest : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"4. If no exceptions were thrown during the tests, get rid of the try/catch operator.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

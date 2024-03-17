@@ -75,4 +75,8 @@ public class PrimitiveObsession : ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"- Easier finding of duplicate code.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

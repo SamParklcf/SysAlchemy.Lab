@@ -74,4 +74,15 @@ public class ExtractMethod : IRefactoringTechniquesInstruction
                $"And if this is indeed the case, return the value of this variable to the main method to keep " +
                $"everything functioning.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. The more lines found in a method, the harder it’s to figure out what the method does. " +
+        $"This is the main reason for this refactoring." +
+        $"{Environment.NewLine}" +
+        $"2. More readable code!" +
+        $"{Environment.NewLine}" +
+        $"3. Less code duplication." +
+        $"{Environment.NewLine}" +
+        $"4. Isolates independent parts of code.";
 }

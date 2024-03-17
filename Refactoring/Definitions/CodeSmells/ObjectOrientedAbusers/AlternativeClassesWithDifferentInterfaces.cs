@@ -61,4 +61,8 @@ public class AlternativeClassesWithDifferentInterfaces: ICodeSmellsInstruction
             $"One example is when the alternative classes are in different libraries " +
             $"that each have their own version of the class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

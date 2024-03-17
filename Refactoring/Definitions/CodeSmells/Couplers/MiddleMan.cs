@@ -48,4 +48,8 @@ public class MiddleMan : ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"- Some design patterns create middle man on purpose (such as Proxy or Decorator).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

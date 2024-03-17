@@ -71,4 +71,8 @@ public class ChangeUnidirectionalAssociationToBidirectional : IRefactoringTechni
                $"5. If the old methods for controlling the association were in the “non-dominant” class," +
                $" create the methods in the “dominant” class, call them, and delegate execution to them.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -69,4 +69,8 @@ public class ReplaceDelegationWithInheritance : IRefactoringTechniquesInstructio
                $"{Environment.NewLine}" +
                $"5. Remove the delegate field.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

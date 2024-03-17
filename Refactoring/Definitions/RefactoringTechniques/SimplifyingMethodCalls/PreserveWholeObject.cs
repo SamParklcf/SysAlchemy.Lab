@@ -70,4 +70,8 @@ public class PreserveWholeObject : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"3. Delete the getter code from the parameter object that had preceded the method call.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

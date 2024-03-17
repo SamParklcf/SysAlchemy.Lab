@@ -71,4 +71,8 @@ public class ReplaceArrayWithObject : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"6. When all data has been moved, delete the array.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

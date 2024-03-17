@@ -91,4 +91,8 @@ public class DuplicateObservedData : IRefactoringTechniquesInstruction
             $"- Change the setters of the GUI class fields so that they set new values in the domain object directly. " +
             $"Watch out to make sure that values aren’t set through a domain class setter—otherwise infinite recursion will result.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

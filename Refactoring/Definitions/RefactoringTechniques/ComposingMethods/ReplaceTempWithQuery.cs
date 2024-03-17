@@ -76,4 +76,13 @@ public class ReplaceTempWithQuery : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Replace the variable with a query to your new method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. if we use the same expression in the other methods, so you should not repeat yourself." +
+        $"{Environment.NewLine}" +
+        $"2. Avoid deduplication." +
+        $"{Environment.NewLine}" +
+        $"3. Make sure that this method only returns a value and doesn’t change the state of the object. if so please " +
+        $"use 'Separate Query from Modifier'.";
 }

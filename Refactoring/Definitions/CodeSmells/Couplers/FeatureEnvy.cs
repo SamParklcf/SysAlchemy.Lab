@@ -61,4 +61,8 @@ public class FeatureEnvy : ICodeSmellsInstruction
             $"The usual advantage of this is the ability to dynamically change the behavior " +
             $"(see Strategy, Visitor and other patterns).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

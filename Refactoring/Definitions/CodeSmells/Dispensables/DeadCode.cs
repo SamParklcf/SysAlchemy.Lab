@@ -49,4 +49,8 @@ public class DeadCode : ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"- Simpler support.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

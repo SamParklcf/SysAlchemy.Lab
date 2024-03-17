@@ -82,4 +82,8 @@ public class ReplaceConditionalWithPolymorphism : IRefactoringTechniquesInstruct
                $"{Environment.NewLine}" +
                $"4. Repeat replacement until the conditional is empty. Then delete the conditional and declare the method abstract.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

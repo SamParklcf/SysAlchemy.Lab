@@ -64,4 +64,8 @@ public class IntroduceNullObject : IRefactoringTechniquesInstruction
                $"in the case of a null value to new methods of the null object. " +
                $"Call these methods instead of the old code in else as the operations by default.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

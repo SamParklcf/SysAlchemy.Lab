@@ -104,4 +104,8 @@ public class ReplaceTypeCodeWithStateOrStrategy : IRefactoringTechniquesInstruct
                $"7. When everything movable has been moved, use 'Replace Conditional with Polymorphism' " +
                $"in order to get rid of conditionals that use type code once and for all.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

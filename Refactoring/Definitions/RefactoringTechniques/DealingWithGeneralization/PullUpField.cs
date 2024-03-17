@@ -54,4 +54,8 @@ public class PullUpField : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"5. You may want to consider using Self Encapsulate Field for the new field, in order to hide it behind access methods.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

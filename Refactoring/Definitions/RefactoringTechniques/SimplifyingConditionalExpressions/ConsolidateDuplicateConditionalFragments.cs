@@ -58,4 +58,8 @@ public class ConsolidateDuplicateConditionalFragments : IRefactoringTechniquesIn
             $"{Environment.NewLine}" +
             $"4. If appropriate and the duplicate code is longer than one line, try using 'Extract Method'.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

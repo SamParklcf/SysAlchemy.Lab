@@ -69,4 +69,8 @@ public class IntroduceParameterObject : IRefactoringTechniquesInstruction
                $"4. When done, see whether there’s any point in moving a part of the method " +
                $"(or sometimes even the whole method) to a parameter object class. If so, use Move Method or Extract Method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -58,4 +58,13 @@ public class SubstituteAlgorithm : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"4. When all tests are successfully completed, delete the old algorithm for good!";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. A fresh start sometimes would be so helpful instead of struggling with the existing one." +
+        $"{Environment.NewLine}" +
+        $"2. An existing algorithm may need to be extracted into a new framework or library." +
+        $"{Environment.NewLine}" +
+        $"3. The requirements for your program may change so heavily " +
+        $"that your existing algorithm can’t be salvaged for the task.";
 }

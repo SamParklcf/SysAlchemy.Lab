@@ -79,4 +79,8 @@ public class ReplaceDataValueWithObject : IRefactoringTechniquesInstruction
             $"(such as users, orders, documents and so forth). At the same time, " +
             $"this approach won’t be useful for objects such as dates, money, ranges, etc.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

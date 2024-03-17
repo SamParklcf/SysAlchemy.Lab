@@ -68,4 +68,8 @@ public class FormTemplateMethod : IRefactoringTechniquesInstruction
             $"5. And finally, pull up the main method of the algorithm to the superclass. " +
             $"Now it should work with the method steps described in the superclass, both real and abstract.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -56,4 +56,14 @@ public class InlineMethod : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Delete the method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. When there are many methods that are simply delegates to another methods, " +
+        $"they become a confusing tangle that’s hard to sort through." +
+        $"{Environment.NewLine}" +
+        $"2. By minimizing the number of unneeded methods, you make the code more straightforward." +
+        $"{Environment.NewLine}" +
+        $"3. Be aware of that: the method isn’t redefined in subclasses. " +
+        $"If the method is redefined, refrain from this technique.";
 }
