@@ -9,6 +9,7 @@ on:
       - 'main'
       - 'develop'
       - 'features/**'
+      - 'releases/**'
 
 jobs:
   pack_and_push:
