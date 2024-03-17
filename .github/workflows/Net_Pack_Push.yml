@@ -62,4 +62,4 @@ jobs:
     - name: Push SysAlchemy.Lab.Refactoring to the GPR
       run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --skip-duplicate
     - name: Push SysAlchemy.Lab.Refactoring to the Nuget Gallery
-      run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key '${{secrets.NUGET_API_KEY}}}' --skip-duplicate
+      run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key '${{secrets.NUGET_API_KEY}}' --skip-duplicate
