@@ -1,0 +1,61 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET Pack and Push
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'develop'
+      - 'features/**'
+
+jobs:
+  pack_and_push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v1.1.1
+      with:
+        versionSpec: '5.x'
+        preferLatestVersion: true
+
+    - name: Determine Version
+      uses: gittools/actions/gitversion/execute@v1.1.1
+      with:
+        useConfigFile: true
+        updateAssemblyInfo: true
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+        source-url: https://nuget.pkg.github.com/SamParklcf/index.json
+      env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Available projects
+      run: dotnet sln list
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+      
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+    - name: Determine Pack Version
+      run: dotnet pack -ver
+
+    - name: Pack SysAlchemy.Lab.Refactoring
+      run: dotnet pack --configuration Release './Refactoring'
+    - name: Push SysAlchemy.Lab.Refactoring to the GPR
+      run: dotnet nuget push ./Refactoring/bin/Release/net8.0/*.nupkg --skip-duplicate
