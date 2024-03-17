@@ -58,4 +58,4 @@ jobs:
     - name: Pack SysAlchemy.Lab.Refactoring
       run: dotnet pack --configuration Release './Refactoring'
     - name: Push SysAlchemy.Lab.Refactoring to the GPR
-      run: dotnet nuget push ./Refactoring/bin/Release/net8.0/*.nupkg --skip-duplicate
+      run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --skip-duplicate
