@@ -41,7 +41,6 @@ jobs:
         source-url: https://nuget.pkg.github.com/SamParklcf/index.json
       env:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          NUGET_GALLERY_TOKEN: ${{secrets.NUGET_API_KEY}}
 
     - name: Available projects
       run: dotnet sln list
@@ -63,4 +62,4 @@ jobs:
     - name: Push SysAlchemy.Lab.Refactoring to the GPR
       run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --skip-duplicate
     - name: Push SysAlchemy.Lab.Refactoring to the Nuget Gallery
-      run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key '${{env.NUGET_GALLERY_TOKEN}}' --skip-duplicate
+      run: dotnet nuget push ./Refactoring/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key '${{secrets.NUGET_API_KEY}}}' --skip-duplicate
