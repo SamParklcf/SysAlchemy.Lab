@@ -1,6 +1,8 @@
 # SysAlchemy.Lab.Refactoring
 This project is talking about all best practices on refactoring techniques.
 
+Main references for this project is [refactoring.guru](https://refactoring.guru/) website.
+
 Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design
 
 ## Dirty Code
