@@ -109,4 +109,8 @@ public class ReplaceTypeCodeWithSubclasses : IRefactoringTechniquesInstruction
                $"6. When everything possible has been moved, use 'Replace Conditional with Polymorphism' " +
                $"in order to get rid of conditions that use the type code once and for all.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

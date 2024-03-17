@@ -49,4 +49,8 @@ public class IncompleteLibraryClass : ICodeSmellsInstruction
         return
             $"Extending a library can generate additional work if the changes to the library involve changes in code.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

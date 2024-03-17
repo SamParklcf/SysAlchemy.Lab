@@ -54,4 +54,8 @@ public class MoveField : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"5. Delete the field in the original class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

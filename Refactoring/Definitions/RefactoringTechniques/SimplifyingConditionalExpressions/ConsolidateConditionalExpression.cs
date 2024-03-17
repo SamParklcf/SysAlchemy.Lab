@@ -68,4 +68,8 @@ public class ConsolidateConditionalExpression : IRefactoringTechniquesInstructio
             $"{Environment.NewLine}" +
             $"2. Perform 'Extract Method' on the operator conditions and give the method a name that reflects the expression’s purpose.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

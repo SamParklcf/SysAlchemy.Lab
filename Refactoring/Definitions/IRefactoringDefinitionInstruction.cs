@@ -10,4 +10,9 @@ public interface IRefactoringDefinitionInstruction
     /// </summary>
     /// <returns>Refactoring technique name.</returns>
     string Name();
+    
+    /// <summary>
+    /// Defines refactoring technique key notes.
+    /// </summary>
+    string KeyNotes { get; }
 }

@@ -64,4 +64,8 @@ public class PullUpConstructorBody : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"3. Place the call for the superclass constructor in the first line in the subclass constructors.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

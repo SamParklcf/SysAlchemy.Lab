@@ -59,4 +59,8 @@ public class SpeculativeGenerality : ICodeSmellsInstruction
             $"This happens if tests need a way to get certain internal information from a class " +
             $"or perform special testing-related actions.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

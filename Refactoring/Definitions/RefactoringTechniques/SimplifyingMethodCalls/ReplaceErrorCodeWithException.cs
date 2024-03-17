@@ -74,4 +74,8 @@ public class ReplaceErrorCodeWithException : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Change the method signature so that it contains information about the exception being thrown (@throws section).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

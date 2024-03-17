@@ -86,4 +86,8 @@ public class EncapsulateCollection : IRefactoringTechniquesInstruction
             $"6. Inspect the client code that uses the collection for code that would look better inside of " +
             $"the collection class itself.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

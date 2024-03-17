@@ -54,4 +54,8 @@ public class MessageChains : ICodeSmellsInstruction
             $"where the functionality is actually occurring. Which is another way of saying, " +
             $"avoid the Middle Man smell as well.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

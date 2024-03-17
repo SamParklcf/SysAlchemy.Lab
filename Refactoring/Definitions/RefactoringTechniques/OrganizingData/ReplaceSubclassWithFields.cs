@@ -72,4 +72,8 @@ public class ReplaceSubclassWithFields : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"8. Delete the subclass.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

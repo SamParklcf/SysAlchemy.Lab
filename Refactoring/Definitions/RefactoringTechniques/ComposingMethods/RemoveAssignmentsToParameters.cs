@@ -65,4 +65,11 @@ public class RemoveAssignmentsToParameters : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"2. In all method code that follows this line, replace the parameter with your new local variable.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. Each component of the program code should be responsible for one and one thing only. " +
+        $"this makes it much easier to maintain the code" +
+        $"{Environment.NewLine}" +
+        $"2. Code becomes more readable.";
 }

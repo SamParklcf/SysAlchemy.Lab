@@ -66,4 +66,8 @@ public class ReplaceNestedConditionalWithGuardClauses : IRefactoringTechniquesIn
             $"see whether you can use 'Consolidate Conditional Expression' for guard clauses that lead " +
             $"to the same exceptions or returned values.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

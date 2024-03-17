@@ -55,4 +55,8 @@ public class LargeClass : ICodeSmellsInstruction
             $"{Environment.NewLine}" +
             $"- In many cases, splitting large classes into parts avoids duplication of code and functionality.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

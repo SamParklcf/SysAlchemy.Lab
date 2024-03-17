@@ -52,4 +52,8 @@ public class ParallelInheritanceHierarchies : ICodeSmellsInstruction
             $"with program architecture. If you find that your attempts to de-duplicate hierarchies produce " +
             $"even uglier code, just step out, revert all of your changes and get used to that code.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

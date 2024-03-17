@@ -80,4 +80,8 @@ public class IntroduceForeignMethod : IRefactoringTechniquesInstruction
                $"This will make it easier to understand why this method is located in this particular class " +
                $"for those who’ll be maintaining the software in the future.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

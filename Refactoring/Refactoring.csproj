@@ -7,6 +7,8 @@
         <AssemblyName>SysAlchemy.Lab.Refactoring</AssemblyName>
         <RootNamespace>SysAlchemy.Lab.Refactoring</RootNamespace>
         <UserSecretsId>557ecaea-e1d9-4cfa-b1d9-e7c182f83038</UserSecretsId>
+        <PackageProjectUrl>https://github.com/SamParklcf/SysAlchemy.Lab</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SamParklcf/SysAlchemy.Lab</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

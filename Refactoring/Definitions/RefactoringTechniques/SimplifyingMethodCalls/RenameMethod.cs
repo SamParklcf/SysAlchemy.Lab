@@ -60,4 +60,8 @@ public class RenameMethod : IRefactoringTechniquesInstruction
             $"4. Delete the old method. If the old method is part of a public interface, " +
             $"don’t perform this step. Instead, mark the old method as deprecated.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

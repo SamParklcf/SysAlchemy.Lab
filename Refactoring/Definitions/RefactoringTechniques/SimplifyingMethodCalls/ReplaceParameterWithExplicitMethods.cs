@@ -66,4 +66,8 @@ public class ReplaceParameterWithExplicitMethods : IRefactoringTechniquesInstruc
             $"{Environment.NewLine}" +
             $"3. When no calls to the original method remain, delete it.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

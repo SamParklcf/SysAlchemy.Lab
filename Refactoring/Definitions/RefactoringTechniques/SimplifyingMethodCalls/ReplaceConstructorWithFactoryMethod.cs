@@ -74,4 +74,8 @@ public class ReplaceConstructorWithFactoryMethod : IRefactoringTechniquesInstruc
                $"4. Investigate the constructor code and try to isolate the code not directly related " +
                $"to constructing an object of the current class, moving such code to the factory method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -48,4 +48,8 @@ public class InappropriateIntimacy : ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"Simplifies support and code reuse.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

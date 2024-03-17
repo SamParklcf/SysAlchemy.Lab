@@ -73,4 +73,10 @@ public class ReplaceMethodWithMethodObject : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"6. Replace the body of the original method in the original class by creating a method object and calling its main method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. Isolating a long method in its own class allows stopping a method from ballooning in size." +
+        $"This also allows splitting it into submethods within the class, " +
+        $"without polluting the original class with utility methods.";
 }

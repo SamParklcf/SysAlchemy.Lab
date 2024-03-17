@@ -51,4 +51,8 @@ public class RemoveMiddleMan : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"2. Replace calls to delegating methods in the server-class with direct calls for methods in the delegate-class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

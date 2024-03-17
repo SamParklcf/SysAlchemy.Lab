@@ -74,4 +74,8 @@ public class ChangeValueToReference : IRefactoringTechniquesInstruction
             $"If objects are created in advance, decide how to handle errors when a non-existent object is requested. " +
             $"You may also need to use 'Rename Method' to inform that the method returns only existing objects.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

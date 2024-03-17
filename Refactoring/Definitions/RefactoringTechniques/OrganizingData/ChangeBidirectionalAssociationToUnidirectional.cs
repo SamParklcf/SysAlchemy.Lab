@@ -76,4 +76,8 @@ public class ChangeBidirectionalAssociationToUnidirectional : IRefactoringTechni
                $"{Environment.NewLine}" +
                $"4. Delete the now-unused field.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

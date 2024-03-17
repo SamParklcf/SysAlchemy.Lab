@@ -63,4 +63,8 @@ public class DataClumps : ICodeSmellsInstruction
             $"Passing an entire object in the parameters of a method, instead of passing just " +
             $"its values (primitive types), may create an undesirable dependency between the two classes.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

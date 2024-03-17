@@ -50,4 +50,8 @@ public class DivergentChange :ICodeSmellsInstruction
                $"{Environment.NewLine}" +
                $"- Simplifies support.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -61,4 +61,11 @@ public class InlineTemp : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"2. Delete the declaration of the variable and its assignment line.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. You have a simple expression that the result held in a variable and nothing more, please apply this " +
+        $"refactoring to this useless variable then." +
+        $"{Environment.NewLine}" +
+        $"2. When a useless variable uses to cache an expensive operation result, you must not apply this refactoring.";
 }
