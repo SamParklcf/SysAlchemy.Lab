@@ -79,4 +79,8 @@ public class IntroduceAssertion : IRefactoringTechniquesInstruction
                $"If your code is working normally even when a particular assertion is false, " +
                $"you can safely remove the assertion.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

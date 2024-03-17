@@ -67,4 +67,8 @@ public class MoveMethod : IRefactoringTechniquesInstruction
             $"4. Take a look: can you delete the old method entirely? If so, place a reference to the new method " +
             $"in all places that use the old one.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

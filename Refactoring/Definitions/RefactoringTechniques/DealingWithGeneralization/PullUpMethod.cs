@@ -67,4 +67,8 @@ public class PullUpMethod : IRefactoringTechniquesInstruction
             $"5. Check the locations in which the method is called. " +
             $"In some places you may be able to replace use of a subclass with the superclass.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

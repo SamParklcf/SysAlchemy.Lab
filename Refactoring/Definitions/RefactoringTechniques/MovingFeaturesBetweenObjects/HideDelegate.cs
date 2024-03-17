@@ -69,4 +69,8 @@ public class HideDelegate : IRefactoringTechniquesInstruction
             $"you can remove the access method to the delegate-class from the server-class " +
             $"(the method that was originally used to get the delegate-class).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

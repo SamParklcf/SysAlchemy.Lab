@@ -79,4 +79,8 @@ public class ExtractClass : IRefactoringTechniquesInstruction
                $"Your decision here depends on how safe it’s for the behavior of the old class " +
                $"when unexpected direct changes are made to the values in the new class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

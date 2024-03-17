@@ -55,4 +55,8 @@ public class PushDownMethod : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"3. Find all places where the method is used and verify that it’s called from the necessary subclass.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

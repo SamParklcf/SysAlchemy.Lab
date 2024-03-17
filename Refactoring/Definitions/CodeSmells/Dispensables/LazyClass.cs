@@ -54,4 +54,8 @@ public class LazyClass : ICodeSmellsInstruction
             $"Sometimes a Lazy Class is created in order to delineate intentions for future development, " +
             $"In this case, try to maintain a balance between clarity and simplicity in your code.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -86,4 +86,8 @@ public class DuplicateCode : ICodeSmellsInstruction
         return
             $"In very rare cases, merging two identical fragments of code can make the code less intuitive and obvious.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

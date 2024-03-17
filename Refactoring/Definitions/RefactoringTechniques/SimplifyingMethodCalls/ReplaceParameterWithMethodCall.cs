@@ -73,4 +73,8 @@ public class ReplaceParameterWithMethodCall : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"4. Use Remove Parameter to eliminate the now-unused parameter.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

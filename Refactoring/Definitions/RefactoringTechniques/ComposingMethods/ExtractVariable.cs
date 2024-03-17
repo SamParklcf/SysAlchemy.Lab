@@ -80,4 +80,21 @@ public class ExtractVariable : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"3. Repeat the process for all complex parts of the expression.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"1. The main reason for extracting variables is to make a complex expression more understandable, " +
+        $"by dividing it into its intermediate parts." +
+        $"{Environment.NewLine}" +
+        $"2. More readable code!" +
+        $"{Environment.NewLine}" +
+        $"3. More readability, fewer long-winded comments. " +
+        $"when you want to explain what is the purpose of the expression!!!" +
+        $"{Environment.NewLine}" +
+        $"4. Applying this refactoring causes More variables present in your code." +
+        $"{Environment.NewLine}" +
+        $"5. This refactoring technique may cause performance impacts, " +
+        $"Say you have a following expression 'if (a() || b()) ....' The program won’t call the method 'b' " +
+        $"if the method 'a' returns true because the resulting value will still be true, " +
+        $"no matter what value returns 'b'. (Example provided in the technique implementation)";
 }

@@ -97,4 +97,8 @@ public class ReplaceMagicNumberWithSymbolicConstant : IRefactoringTechniquesInst
                $"since the same number can mean absolutely different things (and replaced with different constants, " +
                $"as the case may be).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

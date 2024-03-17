@@ -78,4 +78,8 @@ public class ReplaceInheritanceWithDelegation : IRefactoringTechniquesInstructio
             $"5. Change the initialization code of the field in which the former superclass " +
             $"is stored by creating a new object.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

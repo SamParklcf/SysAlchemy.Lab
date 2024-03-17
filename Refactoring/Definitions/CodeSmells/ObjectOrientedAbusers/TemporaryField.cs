@@ -50,4 +50,8 @@ public class TemporaryField : ICodeSmellsInstruction
     {
         return $"Better code clarity and organization.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

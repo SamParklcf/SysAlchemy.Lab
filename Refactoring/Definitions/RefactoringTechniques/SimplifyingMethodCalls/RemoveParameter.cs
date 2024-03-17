@@ -72,4 +72,8 @@ public class RemoveParameter : IRefactoringTechniquesInstruction
             $"4. Delete the old method. Don’t perform this step if the old method is part of a public interface. " +
             $"In this case, mark the old method as deprecated.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

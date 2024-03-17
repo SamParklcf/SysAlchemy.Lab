@@ -67,4 +67,8 @@ public class LongParameterList : ICodeSmellsInstruction
     {
         return $"Don’t get rid of parameters if doing so would cause unwanted dependency between classes.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

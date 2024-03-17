@@ -56,4 +56,8 @@ public class InlineClass : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"4. Delete the original class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

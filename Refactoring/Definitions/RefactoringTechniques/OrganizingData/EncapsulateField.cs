@@ -83,4 +83,8 @@ public class EncapsulateField : IRefactoringTechniquesInstruction
             $"After you create simple methods for access fields, you should recheck the places where these methods are called. " +
             $"It’s quite possible that the code in these areas would look more appropriate in the access methods.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

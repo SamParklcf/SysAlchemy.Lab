@@ -62,4 +62,8 @@ public class DataClass : ICodeSmellsInstruction
             $"{Environment.NewLine}" +
             $"- Helps you to spot duplication of client code.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

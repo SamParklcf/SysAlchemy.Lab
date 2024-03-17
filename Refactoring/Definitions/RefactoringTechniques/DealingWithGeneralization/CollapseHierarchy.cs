@@ -73,4 +73,8 @@ public class CollapseHierarchy : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"4. Delete the empty class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

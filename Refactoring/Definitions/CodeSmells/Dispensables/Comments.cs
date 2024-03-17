@@ -65,4 +65,8 @@ public class Comments : ICodeSmellsInstruction
                $"- When explaining complex algorithms (when all other methods for simplifying " +
                $"the algorithm have been tried and come up short).";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

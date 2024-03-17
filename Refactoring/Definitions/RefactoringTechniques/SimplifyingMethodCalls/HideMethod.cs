@@ -59,4 +59,8 @@ public class HideMethod : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"2. Make each method as private as possible.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

@@ -64,4 +64,8 @@ public class ExtractInterface : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"4. Change type declarations in the client code to use the new interface.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

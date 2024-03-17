@@ -56,4 +56,8 @@ public class RemoveControlFlag : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Remove the remaining code and checks associated with the control flag.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

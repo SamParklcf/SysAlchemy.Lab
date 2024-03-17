@@ -75,4 +75,8 @@ public class LongMethod : ICodeSmellsInstruction
             $"you’re more likely to find truly effective methods for restructuring code and getting " +
             $"real performance gains if the need ever arises.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

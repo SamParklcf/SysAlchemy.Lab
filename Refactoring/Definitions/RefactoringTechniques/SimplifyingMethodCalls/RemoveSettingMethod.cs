@@ -47,4 +47,8 @@ public class RemoveSettingMethod : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"3. Delete the setter.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

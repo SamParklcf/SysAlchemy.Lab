@@ -89,4 +89,8 @@ public class ExtractSubclass : IRefactoringTechniquesInstruction
                $"Post-refactoring, the isElectricCar field is removed and the Car and ElectricCar classes " +
                $"will have their own implementations of the refuel() method.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

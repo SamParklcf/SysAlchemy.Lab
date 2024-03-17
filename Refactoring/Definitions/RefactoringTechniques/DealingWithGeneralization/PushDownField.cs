@@ -53,4 +53,8 @@ public class PushDownField : IRefactoringTechniquesInstruction
                $"{Environment.NewLine}" +
                $"2. Remove the field from the superclass.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }

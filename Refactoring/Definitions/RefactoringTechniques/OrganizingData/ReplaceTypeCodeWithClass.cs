@@ -103,4 +103,8 @@ public class ReplaceTypeCodeWithClass : IRefactoringTechniquesInstruction
             $"{Environment.NewLine}" +
             $"6. Remove the coded type constants from the original class.";
     }
+    
+    /// <inheritdoc/>
+    public string KeyNotes => 
+        $"";
 }
